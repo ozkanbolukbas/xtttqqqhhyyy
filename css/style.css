@@ -1,6 +1,5 @@
 
 .navbar{
-	margin-bottom: 40px;
 	background-color: #45526e;
 }
 .navbar > .container > a,
@@ -63,4 +62,18 @@ footer,.page-footer, .footer-copyright {
 .list-unstyled > li > p > a,
 .footer-copyright>a{
 	color: #f8f9fa;
+}
+
+.carousel{
+	height: 500px;
+	width: 75%;
+}
+
+.clear-both{
+	clear: both;
+}
+
+.carousel-inner > div > img{
+	max-height: 500px;
+	width: 100%;
 }
