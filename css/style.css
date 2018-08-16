@@ -1,4 +1,6 @@
-
+body{
+	background-color: #EEEEEE;
+}
 .navbar{
 	background-color: #45526e;
 }
@@ -65,15 +67,98 @@ footer,.page-footer, .footer-copyright {
 }
 
 .carousel{
-	height: 500px;
-	width: 75%;
+	width: 110%;
 }
 
 .clear-both{
 	clear: both;
 }
 
+.carousel-inner{
+	height: 400px;
+}
 .carousel-inner > div > img{
-	max-height: 500px;
+	height: 100%;
 	width: 100%;
+	vertical-align:top;
+}
+
+.side-menu{
+	border: 1px solid #45526E;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	background-color:#fff; 
+	width: 190px;
+	float: left;
+	position: relative !important;
+	z-index: 9999 !important;
+}
+
+.side-menu > li{
+	width: auto;
+	font-size:14px;
+}
+
+.side-menu > li > a{
+	display: block;
+	color: #000; 
+	text-decoration: none;
+	padding: 16px 0 16px 16px;
+}
+
+ul li:hover > a {
+	color: white;
+	background-color: #555;
+}
+.dropdown{
+	height: 50px;
+}
+.dropdown-content {
+	min-width: 110px;
+	display: none;
+	left: 150px;
+	float:left;
+	top: 0;
+	position: absolute;
+	font-size:14px;
+	list-style-type: none;
+}
+
+.dropdown-content a {
+	background-color: #fbfbfb;
+	color: black;
+	text-decoration: none;
+	display: block;
+	width: 110px;
+	text-align: left;
+	padding: 16px 0 16px 16px;
+}
+
+.dropdown:hover > .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover > .dropdown-content > .dropdown-content-row{
+	display:inline-flex;
+	width: 100%;
+}
+
+.dropdown:hover > .dropdown-content > .dropdown-content-row > img{
+}
+
+@media only screen and (max-width: 1200px) {
+	.side-menu{
+		width: 160px;
+	}
+
+	.dropdown-content {
+		width: auto;
+		left: 120px;
+	}
+}
+
+.slider-menu{
+	background-color: #fff;
+	padding: 20px 0 20px 0;
 }
