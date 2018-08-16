@@ -162,3 +162,58 @@ ul li:hover > a {
 	background-color: #fff;
 	padding: 20px 0 20px 0;
 }
+
+/* Start Services*/
+
+
+.services{
+	padding: 20px 0px 40px 0px;
+}
+
+.services h2{
+	margin:0 0 50px;
+}
+
+.services .item{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.services > .container,
+.urunlerimiz{
+	background-color: #fff;
+	padding:40px;
+}
+
+.services .item i{
+	color: #1abc9c;
+	float: left;
+	width: 15%;
+	margin-right: 10%;
+	margin-top: 10px;
+}
+
+.services .item .info{
+	float: left;
+	width: 75%;
+}
+
+.services .item .info h3{
+	font-weight: normal;
+	color: #585353;
+	margin-bottom: 10px;
+}
+.services .item .info p{
+	margin-top: 0;
+	color: #888;
+}
+/*end of services*/
+
+.category-row{
+	margin-bottom: 20px;
+}
+
+.card{
+	background-color: #eee;
+}
