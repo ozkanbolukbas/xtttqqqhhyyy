@@ -88,7 +88,7 @@ footer,.page-footer, .footer-copyright {
 	list-style-type: none;
 	margin:0;
 	padding:0;
-	background-color:#fff; 
+	background-color:#fff;
 	width: 190px;
 	float: left;
 	position: relative !important;
@@ -102,7 +102,7 @@ footer,.page-footer, .footer-copyright {
 
 .side-menu > li > a{
 	display: block;
-	color: #000; 
+	color: #000;
 	text-decoration: none;
 	padding: 16px 0 16px 16px;
 }
@@ -290,6 +290,7 @@ ul li:hover > a {
 	background-color: #eee;
 }
 
+<<<<<<< HEAD
 .active{
 	background-color: #57637c;
 }
@@ -307,3 +308,26 @@ ul li:hover > a {
 	text-align: center;
 	margin-top: 4px;
 }
+=======
+/* Carddeck */
+.card-deck .card {
+		margin-bottom: .75rem;
+}
+@media (max-width: 1024px) {
+
+	.card-deck-wrapper {margin-right:0;margin-left:0;}
+	.card-deck {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: .75rem;
+	    table-layout: fixed;
+	    border-spacing: 1.25rem 0;
+	}
+	.card-deck .card {
+	    display: block;
+	    margin-bottom: .75rem;
+	    vertical-align: top;
+	}
+
+}
+>>>>>>> 95525c427531fb6cc9cf518bf745bc856307650a
