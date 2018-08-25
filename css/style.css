@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Sawarabi+Mincho');
 body{
 	background-color: #EEEEEE;
 }
 .navbar{
 	background-color: #45526e;
+	padding: 10px;
 }
 .navbar > .container > a,
 .navbar > .container > .collapse > ul > li > a{
 	color: #fff;
 }
 
-.navbar > .container > .collapse > ul > li:hover{
-	background-color: rgba(0,0,0,0.2);
-	border-radius: 10px;
+background-color: rgba(0,0,0,0.2);
+border-radius: 10px;
 }
-
 
 #isbasvuru-formu{
 	margin: 0 auto;
@@ -84,11 +84,10 @@ footer,.page-footer, .footer-copyright {
 }
 
 .side-menu{
-	border: 1px solid #45526E;
 	list-style-type: none;
 	margin:0;
 	padding:0;
-	background-color:#fff;
+	background-color:#f0f0f0;
 	width: 190px;
 	float: left;
 	position: relative !important;
@@ -103,17 +102,19 @@ footer,.page-footer, .footer-copyright {
 .side-menu > li > a{
 	display: block;
 	color: #000;
-	text-decoration: none;
+	font-size: 16px;
+	text-decoration:none;
 	padding: 16px 0 16px 16px;
 }
 
 ul li:hover > a {
 	color: white;
-	background-color: #555;
+	background-color: #57637c;
 }
 .dropdown{
 	height: 50px;
 }
+
 .dropdown-content {
 	min-width: 110px;
 	display: none;
@@ -235,10 +236,13 @@ ul li:hover > a {
 
 .services{
 	padding: 20px 0px 40px 0px;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 .services h2{
 	margin:0 0 50px;
+	font-weight: bold;
 }
 
 .services .item{
@@ -251,7 +255,12 @@ ul li:hover > a {
 	background-color: #fff;
 	padding:40px;
 	align-content: center;
-	text-align: center
+	text-align: center;
+	margin: 0 auto;
+}
+
+.services > .container > row{
+	margin-left: 20px;
 }
 
 .services .item i{
@@ -264,7 +273,9 @@ ul li:hover > a {
 
 .services .item .info{
 	float: left;
-	width: 75%;
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .services .item .info img{
@@ -290,7 +301,6 @@ ul li:hover > a {
 	background-color: #eee;
 }
 
-
 .active{
 	background-color: #57637c;
 }
@@ -311,22 +321,22 @@ ul li:hover > a {
 
 /* Carddeck */
 .card-deck .card {
-		margin-bottom: .75rem;
+	margin-bottom: .75rem;
 }
 @media (max-width: 1024px) {
 
 	.card-deck-wrapper {margin-right:0;margin-left:0;}
 	.card-deck {
-	    display: block;
-	    width: 100%;
-	    margin-bottom: .75rem;
-	    table-layout: fixed;
-	    border-spacing: 1.25rem 0;
+		display: block;
+		width: 100%;
+		margin-bottom: .75rem;
+		table-layout: fixed;
+		border-spacing: 1.25rem 0;
 	}
 	.card-deck .card {
-	    display: block;
-	    margin-bottom: .75rem;
-	    vertical-align: top;
+		display: block;
+		margin-bottom: .75rem;
+		vertical-align: top;
 	}
 
 }
