@@ -115,6 +115,15 @@ ul li:hover > a {
 	height: 50px;
 }
 
+@media only screen and (max-width: 576px) {
+	.side-menu > .dropdown{
+		width: 150px;
+	}
+
+	.dropdown-content {
+	}
+} 
+
 .dropdown-content {
 	min-width: 110px;
 	display: none;
