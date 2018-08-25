@@ -239,3 +239,22 @@ ul li:hover > a {
 	}
 
 }
+
+#job-headers{
+	background-color: grey;
+	border-radius: 20px;
+	vertical-align: middle;
+	color: white;
+	padding: 6px 6px 6px 8px;
+	margin-top: 16px;
+	margin-bottom: 12px;
+}
+#isbasvuru-formu input{
+	border-radius: 16px;
+}
+#isbasvuru-formu select {
+	border-radius: 16px;
+}
+#isbasvuru-formu textarea{
+	border-radius: 16px;
+}
