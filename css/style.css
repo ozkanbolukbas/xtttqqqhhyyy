@@ -330,4 +330,26 @@ ul li:hover > a {
 	}
 
 }
+<<<<<<< HEAD
 >>>>>>> 95525c427531fb6cc9cf518bf745bc856307650a
+=======
+
+#job-headers{
+	background-color: grey;
+	border-radius: 20px;
+	vertical-align: middle;
+	color: white;
+	padding: 6px 6px 6px 8px;
+	margin-top: 16px;
+	margin-bottom: 12px;
+}
+#isbasvuru-formu input{
+	border-radius: 16px;
+}
+#isbasvuru-formu select {
+	border-radius: 16px;
+}
+#isbasvuru-formu textarea{
+	border-radius: 16px;
+}
+>>>>>>> a191e286a6dceec8172fb3318fcf8561d2b8ca25
