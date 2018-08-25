@@ -77,3 +77,25 @@ footer,.page-footer, .footer-copyright {
 	max-height: 500px;
 	width: 100%;
 }
+
+/* Carddeck */
+.card-deck .card {
+		margin-bottom: .75rem;
+}
+@media (max-width: 1024px) {
+
+	.card-deck-wrapper {margin-right:0;margin-left:0;}
+	.card-deck {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: .75rem;
+	    table-layout: fixed;
+	    border-spacing: 1.25rem 0;
+	}
+	.card-deck .card {
+	    display: block;
+	    margin-bottom: .75rem;
+	    vertical-align: top;
+	}
+
+}
