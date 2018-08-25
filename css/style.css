@@ -290,7 +290,7 @@ ul li:hover > a {
 	background-color: #eee;
 }
 
-<<<<<<< HEAD
+
 .active{
 	background-color: #57637c;
 }
@@ -308,7 +308,7 @@ ul li:hover > a {
 	text-align: center;
 	margin-top: 4px;
 }
-=======
+
 /* Carddeck */
 .card-deck .card {
 		margin-bottom: .75rem;
@@ -330,9 +330,6 @@ ul li:hover > a {
 	}
 
 }
-<<<<<<< HEAD
->>>>>>> 95525c427531fb6cc9cf518bf745bc856307650a
-=======
 
 #job-headers{
 	background-color: grey;
@@ -352,4 +349,3 @@ ul li:hover > a {
 #isbasvuru-formu textarea{
 	border-radius: 16px;
 }
->>>>>>> a191e286a6dceec8172fb3318fcf8561d2b8ca25
