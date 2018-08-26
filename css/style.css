@@ -129,7 +129,7 @@ footer,.page-footer, .footer-copyright {
 	padding: 16px 0 16px 16px;
 }
 
-ul li:hover > a {
+.side-menu > li:hover {
 	color: white;
 	background-color: #F46F01;
 }
@@ -380,13 +380,13 @@ ul li:hover > a {
 
 	.dropdown-content {
 		width: auto;
-		left: 120px;	
+		left: 120px;
 	}
 
 	.carousel{
 		height: 100%;
 		margin-top: 20px;
-	}	
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -447,7 +447,7 @@ ul li:hover > a {
 	.dropdown:nth-child(7):hover > .dropdown-content > li,
 	.dropdown:nth-child(8):hover > .dropdown-content > li{
 		width: 70px;
-	}	
+	}
 
 }
 
