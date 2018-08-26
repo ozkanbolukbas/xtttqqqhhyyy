@@ -32,7 +32,7 @@
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="pages/magzalar.html">Mağazalar</a></li>
-						<li class="nav-item"><a class="nav-link" href="pages/isbasvuru.html">Kariyer</a></li>
+						<li class="nav-item"><a class="nav-link" href="pages/kariyer.html">Kariyer</a></li>
 						<li class="nav-item"><a class="nav-link" href="pages/hakkimizda.html">Hakkımızda</a></li>
 					</ul>
 				</div>
@@ -44,11 +44,12 @@
 				<div class="col-sm-12 col-md-2">
 					<!--				Side menu-->
 					<nav class="navbar-light navbar-expand-md">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideBarToggle" aria-controls="sideBarToggle" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
+						<button id="nav-button" class="navbar-toggler btn-block" type="button" data-toggle="collapse" data-target="#sideBarToggle" aria-controls="sideBarToggle" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="btn btn-block">Kategoriler<i class="fas fa-angle-down fa-2x fa-pull-right"></i></span>
 						</button>
+						<span id="back-button" class="btn btn-block hide-list"><i class="fas fa-angle-left fa-2x fa-pull-left"></i>Kategoriler</span>
 						<div class="collapse navbar-collapse" id="sideBarToggle">
-							<ul class="side-menu">
+							<ul class="side-menu" id="side-menu">
 								<li class="dropdown" id="beyaz"><a href="#">Beyaz Eşya</a>
 								</li>
 								<li class="dropdown" id="elektronik"><a href="#">Elektronik</a>
@@ -293,7 +294,7 @@
 							</li>
 							<li>
 								<p>
-									<a href="pages/isbasvuru.html">KARİYER</a>
+									<a href="pages/kariyer.html">KARİYER</a>
 								</p>
 							</li>
 							<li>
