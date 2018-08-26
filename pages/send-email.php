@@ -3,7 +3,7 @@
 if(isset($_POST['email'])) {
 
 	// EDIT THE 2 LINES BELOW AS REQUIRED
-	$email_to = "you@yourdomain.com";
+	$email_to = "ozkanbolukbas@gmail.com";
 	$email_subject = "Your email subject line";
 
 	function died($error) {
@@ -29,10 +29,10 @@ if(isset($_POST['email'])) {
 	   !isset($_POST['last_company']) ||
 	   !isset($_POST['evyasam_position']) ||
 	   !isset($_POST['message'])) {
-		died('We are sorry, but there appears to be a problem with the form you submitted.');       
+		died('We are sorry, but there appears to be a problem with the form you submitted.');
 	}
 
-	$name = $_POST['name']; 
+	$name = $_POST['name'];
 	$surname = $_POST['surname'];
 	$email_from = $_POST['email'];
 	$phone_number = $_POST['telefon'];
@@ -104,6 +104,7 @@ if(isset($_POST['email'])) {
 	$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-	@mail($email_to, $email_subject, $email_message, $headers); 
+	@mail($email_to, $email_subject, $email_message, $headers);
+	header("Location:http://deneme.evyasam.com.tr/index.html");
 }
 ?>
