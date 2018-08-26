@@ -90,6 +90,7 @@ footer,.page-footer, .footer-copyright {
 
 .carousel{
 	width: 100%;
+	height: 400px;
 }
 
 .clear-both{
@@ -97,7 +98,7 @@ footer,.page-footer, .footer-copyright {
 }
 
 .carousel-inner{
-	height: 400px;
+	height:400px;
 }
 .carousel-inner > div > img{
 	height: 100%;
@@ -158,13 +159,16 @@ footer,.page-footer, .footer-copyright {
 	padding: 16px 0 16px 16px;
 }
 
-.dropdown:first-child:hover > .dropdown-content {
+.dropdown:first-child:hover > #first-element {
+
+	/*
 	display: block;
 	background-color: #fbfbfb;
 	top: -1px;
 	left: 190px;
 	height: 402px;
 	width: 920px;
+	*/
 }
 
 .dropdown:nth-child(2):hover > .dropdown-content {
@@ -455,7 +459,6 @@ footer,.page-footer, .footer-copyright {
 
 	.carousel-inner{
 		height: 100%;
-		margin-top: 20px;
 		height: 400px;
 	}
 	.navbar{
@@ -482,3 +485,35 @@ footer,.page-footer, .footer-copyright {
 }
 
 /* Media Part Ending */
+
+#items-container > ul > li{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 130px;
+	width: 100px;
+	float: left;
+}
+
+#items-container > ul > li > p{
+	margin-left: 8px;
+}
+
+#items-container > ul{
+	list-style: none;
+}
+
+
+/*items container section*/
+
+#items-container{
+}
+
+
+
+.hide-list{
+	display: none;
+}
+
+.show-list{
+	display: inline;
+}
