@@ -4,11 +4,33 @@ body{
 }
 .navbar{
 	background-color: #45526e;
-	padding: 10px;
+	padding-bottom: 0;
+	padding-top: 0;
+	/*
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	margin-top: 0
+	*/
 }
+
+.navbar > .container > .logo{
+	width: 200px;
+}
+.navbar > .container > .logo > a > img{
+	width: 100%;
+	height: 100%;
+}
+
 .navbar > .container > a,
 .navbar > .container > .collapse > ul > li > a{
 	color: #fff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.navbar > .container > .collapse > ul > li:hover > a{
+	background-color: #F46F01;
 }
 
 background-color: rgba(0,0,0,0.2);
@@ -67,7 +89,7 @@ footer,.page-footer, .footer-copyright {
 }
 
 .carousel{
-	width: 110%;
+	width: 100%;
 }
 
 .clear-both{
@@ -88,10 +110,10 @@ footer,.page-footer, .footer-copyright {
 	margin:0;
 	padding:0;
 	background-color:#f0f0f0;
-	width: 190px;
+	width: 100%;
 	float: left;
 	position: relative !important;
-	z-index: 9999 !important;
+	z-index: 99 !important;
 }
 
 .side-menu > li{
@@ -109,23 +131,14 @@ footer,.page-footer, .footer-copyright {
 
 ul li:hover > a {
 	color: white;
-	background-color: #57637c;
+	background-color: #F46F01;
 }
 .dropdown{
 	height: 50px;
 }
 
-@media only screen and (max-width: 576px) {
-	.side-menu > .dropdown{
-		width: 150px;
-	}
-
-	.dropdown-content {
-	}
-}
-
 .dropdown-content {
-	min-width: 110px;
+	width: 110px;
 	display: none;
 	left: 150px;
 	float:left;
@@ -140,9 +153,8 @@ ul li:hover > a {
 	background-color: #fbfbfb;
 	color: black;
 	text-decoration: none;
-	display: block;
+	text-align: center;
 	width: 110px;
-	text-align: left;
 	padding: 16px 0 16px 16px;
 }
 
@@ -224,18 +236,7 @@ ul li:hover > a {
 .dropdown:hover > .dropdown-content > .dropdown-content-row > img{
 }
 
-@media only screen and (max-width: 1200px) {
-	.side-menu{
-		width: 160px;
-	}
-
-	.dropdown-content {
-		width: auto;
-		left: 120px;
-	}
-}
-
-.slider-menu{
+.main-section{
 	background-color: #fff;
 	padding: 20px 0 20px 0;
 }
@@ -244,7 +245,7 @@ ul li:hover > a {
 
 
 .services{
-	padding: 20px 0px 40px 0px;
+	padding-top: 20px;
 	font-family: 'Montserrat', sans-serif;
 
 }
@@ -311,7 +312,7 @@ ul li:hover > a {
 }
 
 .active{
-	background-color: #57637c;
+	background-color: #F46F01;
 }
 
 .hakk-text{
@@ -349,23 +350,6 @@ ul li:hover > a {
 	color: orange;
 	margin-top: 8px
 }
-@media (max-width: 1024px) {
-
-	.card-deck-wrapper {margin-right:0;margin-left:0;}
-	.card-deck {
-		display: block;
-		width: 100%;
-		margin-bottom: .75rem;
-		table-layout: fixed;
-		border-spacing: 1.25rem 0;
-	}
-	.card-deck .card {
-		display: block;
-		margin-bottom: .75rem;
-		vertical-align: top;
-	}
-
-}
 
 #job-headers{
 	background-color: grey;
@@ -385,3 +369,116 @@ ul li:hover > a {
 #isbasvuru-formu textarea{
 	border-radius: 16px;
 }
+
+
+/* Media Part Starting */
+
+@media only screen and (max-width: 1200px) {
+	.side-menu{
+		width: 160px;
+	}
+
+	.dropdown-content {
+		width: auto;
+		left: 120px;	
+	}
+
+	.carousel{
+		height: 100%;
+		margin-top: 20px;
+	}	
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.card-deck-wrapper {margin-right:0;margin-left:0;}
+	.card-deck {
+		display: block;
+		width: 100%;
+		margin-bottom: .75rem;
+		table-layout: fixed;
+		border-spacing: 1.25rem 0;
+	}
+	.card-deck .card {
+		display: block;
+		margin-bottom: .75rem;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.side-menu{
+		width: 100%;
+	}
+
+	.carousel-inner{
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.dropdown-content > li{
+		width: 50px;
+	}
+
+	.dropdown-content > li>img{
+		width: 100%;
+	}
+
+	.dropdown:first-child:hover > .dropdown-content,
+	.dropdown:nth-child(2):hover > .dropdown-content,
+	.dropdown:nth-child(3):hover > .dropdown-content,
+	.dropdown:nth-child(4):hover > .dropdown-content,
+	.dropdown:nth-child(5):hover > .dropdown-content,
+	.dropdown:nth-child(6):hover > .dropdown-content,
+	.dropdown:nth-child(7):hover > .dropdown-content,
+	.dropdown:nth-child(8):hover > .dropdown-content{
+		left: 160px;
+		width: 700px;
+	}
+
+	.dropdown:first-child:hover > .dropdown-content > li,
+	.dropdown:nth-child(2):hover > .dropdown-content > li,
+	.dropdown:nth-child(3):hover > .dropdown-content > li,
+	.dropdown:nth-child(4):hover > .dropdown-content > li,
+	.dropdown:nth-child(5):hover > .dropdown-content > li,
+	.dropdown:nth-child(6):hover > .dropdown-content > li,
+	.dropdown:nth-child(7):hover > .dropdown-content > li,
+	.dropdown:nth-child(8):hover > .dropdown-content > li{
+		width: 70px;
+	}	
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.carousel-inner{
+		height: 100%;
+		margin-top: 20px;
+		height: 400px;
+	}
+	.navbar{
+		padding: 10px;
+	}
+
+	.navbar > .container > .collapse > ul > li > a{
+		padding: 10px;
+	}
+
+	.dropdown:first-child:hover > .dropdown-content,
+	.dropdown:nth-child(2):hover > .dropdown-content,
+	.dropdown:nth-child(3):hover > .dropdown-content,
+	.dropdown:nth-child(4):hover > .dropdown-content,
+	.dropdown:nth-child(5):hover > .dropdown-content,
+	.dropdown:nth-child(6):hover > .dropdown-content,
+	.dropdown:nth-child(7):hover > .dropdown-content,
+	.dropdown:nth-child(8):hover > .dropdown-content{
+		display:none;
+	}
+	.side-menu{
+		width: 100%;
+	}
+}
+
+/* Media Part Ending */

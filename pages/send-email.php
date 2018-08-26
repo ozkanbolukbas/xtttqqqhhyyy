@@ -18,14 +18,34 @@ if(isset($_POST['email'])) {
 	if(!isset($_POST['name']) ||
 	   !isset($_POST['surname']) ||
 	   !isset($_POST['email']) ||
+	   !isset($_POST['telefon']) ||
+	   !isset($_POST['birth_place']) ||
+	   !isset($_POST['birth_date']) ||
+	   !isset($_POST['address']) ||
+	   !isset($_POST['education_status']) ||
+	   !isset($_POST['last_degree']) ||
+	   !isset($_POST['school_name']) ||
+	   !isset($_POST['school_degree']) ||
+	   !isset($_POST['last_company']) ||
+	   !isset($_POST['evyasam_position']) ||
 	   !isset($_POST['message'])) {
 		died('We are sorry, but there appears to be a problem with the form you submitted.');       
 	}
 
-	$name = $_POST['name']; // required
-	$surname = $_POST['surname']; // required
-	$email_from = $_POST['email']; // required
-	$comments = $_POST['message']; // required
+	$name = $_POST['name']; 
+	$surname = $_POST['surname'];
+	$email_from = $_POST['email'];
+	$phone_number = $_POST['telefon'];
+	$birth_place = $_POST['birth_place'];
+	$birth_date=	$_POST['birth_date'];
+	$address = $_POST['address'];
+	$education_status = $_POST['education_status'];
+	$last_degree=	$_POST['last_degree'];
+	$school_name = $_POST['school_name'];
+	$school_degree = $_POST['school_degree'];
+	$last_company=$_POST['last_company'];
+	$position=$_POST['evyasam_position'];
+	$comments = $_POST['message'];
 
 	$error_message = "";
 	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -33,7 +53,6 @@ if(isset($_POST['email'])) {
 	if(!preg_match($email_exp,$email_from)) {
 		$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
 	}
-
 
 	$string_exp = "/^[A-Za-z .'-]+$/";
 
@@ -43,6 +62,12 @@ if(isset($_POST['email'])) {
 
 	if(!preg_match($string_exp,$surname)) {
 		$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+	}
+
+	$phone_pattern = '/^[0-9\-\(\)\/\+\s]*$/';
+	if(!preg_match($phone_pattern, $phone_number))
+	{
+		$error_message .= 'The phone number you entered does not appear to be valid.<br />';
 	}
 
 	if(strlen($comments) < 2) {
@@ -63,7 +88,17 @@ if(isset($_POST['email'])) {
 	$email_message .= "First Name: ".clean_string($name)."\n";
 	$email_message .= "Last Name: ".clean_string($surname)."\n";
 	$email_message .= "Email: ".clean_string($email_from)."\n";
-	$email_message .= "Comments: ".clean_string($comments)."\n";
+	$email_message .= "Phone Number: ".clean_string($phone_number)."\n";
+	$email_message .= "Birth Place: ".clean_string($birth_place)."\n";
+	$email_message .= "Birth Date: ".clean_string($birth_date)."\n";
+	$email_message .= "Address: ".clean_string($address)."\n";
+	$email_message .= "Education Status: ".clean_string($education_status)."\n";
+	$email_message .= "Last Degree: ".clean_string($last_degree)."\n";
+	$email_message .= "School Name: ".clean_string($school_name)."\n";
+	$email_message .= "School Degree: ".clean_string($school_degree)."\n";
+	$email_message .= "Last Company: ".clean_string($last_company)."\n";
+	$email_message .= "Ev Yaşam Position: ".clean_string($position)."\n";
+	$email_message .= "Message: ".clean_string($comments)."\n";
 
 	// create email headers
 	$headers = 'From: '.$email_from."\r\n".
