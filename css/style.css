@@ -385,7 +385,7 @@ footer,.page-footer, .footer-copyright {
 		margin-top: 20px;
 	}
 	.main-section{
-		height: 340px;
+		height: auto;
 	}
 
 	.side-navbar{
