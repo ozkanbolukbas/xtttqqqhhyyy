@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Sawarabi+Mincho');
 body{
-	background-color: #EEEEEE;
+	background-color: #EEE;
 }
+
 .navbar{
 	background-color: #3b3b3b;
 	padding-top: 1rem;
@@ -23,10 +24,6 @@ body{
 
 .navbar > .container > .collapse > ul > li:hover > a{
 	background-color: #F46F01;
-}
-
-background-color: rgba(0,0,0,0.2);
-border-radius: 10px;
 }
 
 #isbasvuru-formu{
@@ -383,12 +380,18 @@ footer,.page-footer, .footer-copyright {
 
 	.carousel-inner{
 		margin-top: 20px;
+		height:auto;
 	}
 	.main-section{
 		height: auto;
 	}
 
-	.side-navbar{
+	#carouselID{
+		height:auto;
+	}
+
+	#back-button{
+		margin-bottom:30px;
 	}
 
 	#back-button,
