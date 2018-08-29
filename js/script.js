@@ -1,19 +1,19 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 jQuery(document).ready(function($){
-	if(document.body.clientWidth>=992){
+	if(document.body.clientWidth>=768){
 		listSize();
 	}else{
 		smallDevice();
 	}
 	$( window ).resize(function() {
-		if(document.body.clientWidth>=992){
+		if(document.body.clientWidth>=768){
 			listSize();
 		}else{
 			smallDevice();
 		}
 
-});
+	});
 	function listSize() {
 		$("#beyaz").off('click');
 		$("#elektronik").off('click');
@@ -23,72 +23,81 @@ jQuery(document).ready(function($){
 		$("#evTekstil").off('click');
 		$("#bebek").off('click');
 		$("#spor").off('click');
-			$('#back-button').addClass('hide-list');
-			$('#nav-button').removeClass('hide-list');
-			$('side-menu').removeClass('hide-list');
-				$("#beyaz").hover(function(){
-					$('#first-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#first-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$('#first-element').removeClass('show-list');
+		$('#second-element').removeClass('show-list');
+		$('#third-element').removeClass('show-list');
+		$('#fourth-element').removeClass('show-list');
+		$('#fifth-element').removeClass('show-list');
+		$('#sixth-element').removeClass('show-list');
+		$('#seventh-element').removeClass('show-list');
+		$('#eighth-element').removeClass('show-list');
+		$('#back-button').addClass('hide-list');
+		$('#nav-button').removeClass('hide-list');
+		$('#side-menu').removeClass('hide-list');
+		$('#carouselID').removeClass('hide-list');
+		$("#beyaz").hover(function(){
+			$('#first-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#first-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#elektronik").hover(function(){
-					$('#second-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#second-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#elektronik").hover(function(){
+			$('#second-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#second-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#evAletleri").hover(function(){
-					$('#third-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#third-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#evAletleri").hover(function(){
+			$('#third-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#third-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#mobilya").hover(function(){
-					$('#fourth-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#fourth-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#mobilya").hover(function(){
+			$('#fourth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#fourth-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#zuccaciye").hover(function(){
-					$('#fifth-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#fifth-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#zuccaciye").hover(function(){
+			$('#fifth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#fifth-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#evTekstil").hover(function(){
-					$('#sixth-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#sixth-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#evTekstil").hover(function(){
+			$('#sixth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#sixth-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#bebek").hover(function(){
-					$('#seventh-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#seventh-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#bebek").hover(function(){
+			$('#seventh-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#seventh-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 
-				$("#spor").hover(function(){
-					$('#eighth-element').addClass('show-list');
-					$('#carouselID').addClass('hide-list');
-				}, function(){
-					$('#eighth-element').removeClass('show-list');
-					$('#carouselID').removeClass('hide-list');
-				});
+		$("#spor").hover(function(){
+			$('#eighth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
+		}, function(){
+			$('#eighth-element').removeClass('show-list');
+			$('#carouselID').removeClass('hide-list');
+		});
 	}
 	function smallDevice(){
 		$("#beyaz").unbind('mouseenter mouseleave');
@@ -101,68 +110,68 @@ jQuery(document).ready(function($){
 		$("#spor").unbind('mouseenter mouseleave');
 		var idName;
 		$("#beyaz").click(function(){
-				idName = $('#first-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#first-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#first-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#first-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#elektronik").click(function(){
-				idName = $('#second-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#second-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#second-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#second-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#evAletleri").click(function(){
-				idName = $('#third-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#third-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#third-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#third-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#mobilya").click(function(){
-				idName = $('#fourth-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#fourth-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#fourth-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#fourth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#zuccaciye").click(function(){
-				idName = $('#fifth-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#fifth-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#fifth-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#fifth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#evTekstil").click(function(){
-				idName = $('#sixth-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#sixth-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#sixth-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#sixth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#bebek").click(function(){
-				idName = $('#seventh-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#seventh-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#seventh-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#seventh-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#spor").click(function(){
-				idName = $('#eighth-element');
-				$('#back-button').removeClass('hide-list');
-				$('#nav-button').addClass('hide-list');
-				$('#side-menu').addClass('hide-list');
-				$('#eighth-element').addClass('show-list');
-				$('#carouselID').addClass('hide-list');
+			idName = $('#eighth-element');
+			$('#back-button').removeClass('hide-list');
+			$('#nav-button').addClass('hide-list');
+			$('#side-menu').addClass('hide-list');
+			$('#eighth-element').addClass('show-list');
+			$('#carouselID').addClass('hide-list');
 		});
 		$("#back-button").click(function(){
 			$('#back-button').addClass('hide-list');
