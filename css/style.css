@@ -378,6 +378,10 @@ footer,.page-footer, .footer-copyright {
 
 @media only screen and (max-width: 768px){
 
+	.carousel-indicators{
+		display: none;
+	}
+
 	.carousel-inner{
 		margin-top: 20px;
 		height:auto;
@@ -388,6 +392,7 @@ footer,.page-footer, .footer-copyright {
 
 	#carouselID{
 		height:auto;
+		margin-bottom: 0px;
 	}
 
 	#back-button{
